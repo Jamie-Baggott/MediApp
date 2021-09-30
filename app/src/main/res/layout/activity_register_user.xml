@@ -24,7 +24,7 @@
         android:id="@+id/bannerDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your personal medical helper"
+        android:text="Your personal medical help app"
         android:textSize = "18sp"
         android:textAlignment="center"
         android:textStyle="italic"
