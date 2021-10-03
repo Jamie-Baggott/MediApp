@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mediapp">
         <activity
+            android:name=".ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
             android:name=".RegisterUser"
             android:exported="true" />
         <activity
