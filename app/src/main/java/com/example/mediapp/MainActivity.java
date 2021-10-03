@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(new Intent(MainActivity.this, ProfileActivity.class));
                 }else {
                     Toast.makeText(MainActivity.this, "Failed to login! Please verify password and email", Toast.LENGTH_LONG).show();
+                    progressBar.setVisibility(View.GONE);
                 }
             }
         });

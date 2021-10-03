@@ -20,6 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.EventListener;
 
+
 public class ProfileActivity extends AppCompatActivity {
 
     private FirebaseUser user;
@@ -59,11 +60,12 @@ public class ProfileActivity extends AppCompatActivity {
                 User userProfile = snapshot.getValue(User.class);
 
                 if (userProfile != null){
-                    String fullName = userProfile.fullName;
-                    String email = userProfile.email;
+                    String fullName = userProfile.fullName.toUpperCase();
+                    String email = userProfile.email.toUpperCase();
                     String age = userProfile.age;
 
-                    welcomeTextView.setText("Welcome, " + fullName+"!");
+
+                    welcomeTextView.setText("WELCOME, " + fullName+"!");
                     fullNameTextView.setText(fullName);
                     emailTextView.setText(email);
                     ageTextView.setText(age);
