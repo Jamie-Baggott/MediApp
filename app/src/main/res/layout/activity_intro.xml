@@ -21,20 +21,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="sans-serif-condensed"
                 android:text="@string/banner"
                 android:textAlignment="center"
                 android:textSize="60sp"
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/black"/>
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/bannerDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="sans-serif-condensed"
                 android:text="@string/bannerDescription"
                 android:textAlignment="center"
                 android:textSize="18sp"
@@ -73,37 +75,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/gpButton" />
 
-            <Button
-                android:id="@+id/aboutButton"
-                android:layout_width="380dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="24dp"
-                android:backgroundTint="#0ED6B9"
-                android:text="@string/about_us"
-                android:textColor="#ffffff"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/patientButton" />
 
-            <Button
-                android:id="@+id/supportButton"
-                android:layout_width="380dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="24dp"
-                android:backgroundTint="#0ED6B9"
-                android:text="@string/support"
-                android:textColor="#ffffff"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/aboutButton" />
 
             <Button
                 android:id="@+id/insuranceButton"
@@ -119,7 +91,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/supportButton" />
+                app:layout_constraintTop_toBottomOf="@+id/patientButton" />
 
             <Button
                 android:id="@+id/ratingsButton"
@@ -136,7 +108,39 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/supportButton" />
+
+            <Button
+                android:id="@+id/aboutButton"
+                android:layout_width="380dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#0ED6B9"
+                android:text="@string/about_us"
+                android:textColor="#ffffff"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/insuranceButton" />
+
+            <Button
+                android:id="@+id/supportButton"
+                android:layout_width="380dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#0ED6B9"
+                android:text="@string/support"
+                android:textColor="#ffffff"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aboutButton" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
