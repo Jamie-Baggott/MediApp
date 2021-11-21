@@ -8,15 +8,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView email;
-    private Button home;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        email = findViewById(R.id.email);
+        TextView email = findViewById(R.id.email);
 
 
         Intent gp = getIntent();
@@ -27,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
         email.setText(patientEmail);
         email.setText(gpEmail);
 
-        home = findViewById(R.id.returnIntro);
+        Button home1 = findViewById(R.id.returnIntro);
 
-        home.setOnClickListener(view -> {
+        home1.setOnClickListener(view -> {
             Intent home = new Intent(getApplicationContext(), Intro.class);
             startActivity(home);
             finish();
