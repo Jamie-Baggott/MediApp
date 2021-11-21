@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         email.setText(patientEmail);
         email.setText(gpEmail);
 
+        
         Button home1 = findViewById(R.id.returnIntro);
 
         home1.setOnClickListener(view -> {
