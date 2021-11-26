@@ -63,11 +63,13 @@
         app:layout_constraintTop_toBottomOf="@id/support"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="20dp"
+        android:autoLink="email"
         android:layout_marginStart="15dp"
         />
 
     <TextView
         android:textColor="@color/black"
+        android:autoLink="phone"
         android:id="@+id/phoneNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -40,4 +40,7 @@
     <string name="support_amp_contact_information"><![CDATA[Support & Contact Information]]></string>
     <string name="support_email">Email Address: MediAppSupport@gmail.ie</string>
     <string name="support_phone">Phone us: +353851234567</string>
+    <string name="rate">Rate our App</string>
+    <string name="review">Write a Review</string>
+    <string name="submit">Submit</string>
 </resources>
